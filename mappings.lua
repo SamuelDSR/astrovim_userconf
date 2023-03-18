@@ -15,6 +15,31 @@ return {
       end,
       desc = "Pick to close",
     },
+    -- smart-splits key mapping
+    ["<S-h>"] = {
+      function()
+        require("smart-splits").resize_left()
+      end,
+      desc="resize window to left"
+    },
+    ["<S-l>"] = {
+      function()
+        require("smart-splits").resize_right()
+      end,
+      desc="resize window to right"
+    },
+    ["<S-k>"] = {
+      function()
+        require("smart-splits").resize_up()
+      end,
+      desc="resize window to up"
+    },
+    ["<S-j>"] = {
+      function()
+        require("smart-splits").resize_do()
+      end,
+      desc="resize window to down"
+    },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
