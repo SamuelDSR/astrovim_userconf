@@ -5,6 +5,7 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
 
   { import = "astrocommunity.colorscheme.catppuccin", enable = true },
+  -- { import = "astrocommunity.motion.leap-nvim", enable = true },
   {
     "catppuccin",
     opts = {
@@ -22,7 +23,7 @@ return {
         percentage = 0.15,
       },
       no_italic = false, -- Force no italic
-      no_bold = false,   -- Force no bold
+      no_bold = false, -- Force no bold
       styles = {
         comments = { "italic" },
         conditionals = { "italic" },
@@ -40,22 +41,22 @@ return {
       color_overrides = {},
       custom_highlights = {},
       integrations = {
-        cmp        = true,
-        gitsigns   = true,
-        nvimtree   = true,
-        telescope  = true,
-        notify     = true,
-        mini       = false,
-        dap        = true,
-        Special    = true,
+        cmp = true,
+        gitsigns = true,
+        nvimtree = true,
+        telescope = true,
+        notify = true,
+        mini = false,
+        dap = true,
+        Special = false,
         treesitter = true,
-        mason      = true,
-        markdown   = true,
+        mason = true,
+        markdown = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
         -- https://github.com/catppuccin/nvim
-      }
-    }
-  }
+      },
+    },
+  },
   -- { import = "astrocommunity.colorscheme.gruvbox" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
